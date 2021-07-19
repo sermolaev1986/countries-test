@@ -1,13 +1,13 @@
 <div class="search-container">
   <div class="btn-group btn-group-toggle">
     <button class="background-light" (click)="filterCountriesByName()">
-      <fa-icon class="text-white" [icon]="searchIcon"></fa-icon>
+      <fa-icon class="text-color" [icon]="searchIcon"></fa-icon>
     </button>
     <input #countryNameFilter type="text" class="form-control" placeholder="Search for a country...">
   </div>
 
   <div ngbDropdown class="background-light d-inline-block">
-    <button class="btn text-white" id="dropdownBasic1" ngbDropdownToggle>Filter by region</button>
+    <button class="btn text-color" id="dropdownBasic1" ngbDropdownToggle>Filter by region</button>
     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
       <button *ngFor="let region of regions"  (click)="filterCountriesByRegion(region)" ngbDropdownItem>{{region}}</button>
     </div>

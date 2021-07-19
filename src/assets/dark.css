@@ -1,0 +1,21 @@
+body {
+  background: #323238;
+  color: white;
+}
+
+input {
+  background-color: #485253 !important;
+  color: white !important;
+}
+
+a {
+  color: white;
+}
+
+.background-light {
+  background-color: #485253;
+}
+
+.text-color {
+  color: white;
+}

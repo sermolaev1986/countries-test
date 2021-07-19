@@ -1,0 +1,21 @@
+body {
+  background: #cbc1c1;
+  color: black;
+}
+
+input {
+  background-color: white !important;
+  color: black !important;
+}
+
+a {
+  color: black;
+}
+
+.background-light {
+  background-color: white;
+}
+
+.text-color {
+  color: black;
+}

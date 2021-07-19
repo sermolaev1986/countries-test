@@ -1,0 +1,50 @@
+<div *ngIf="country" class="country-detail-container">
+  <a routerLink="/countries" class="back-button background-light text-white">
+    <fa-icon [icon]="backIcon"></fa-icon>
+    <span class="back-text">Back</span>
+  </a>
+  <div class="country-detail">
+    <img [src]="country.flag">
+    <div class="country-summary-container">
+      <div class="country-name">{{country.name}}</div>
+      <div class="country-summary">
+        <div class="country-summary-column-1" #column1>
+          <div class="summary-row">
+            <span>Native Name:</span>
+            <span>{{country.name}}</span>
+          </div>
+          <div class="summary-row">
+            <span>Population:</span>
+            <span>{{country.population}}</span>
+          </div>
+          <div class="summary-row">
+            <span>Region:</span>
+            <span>{{country.region}}</span>
+          </div>
+          <div class="summary-row">
+            <span>Sub Region:</span>
+            <span>{{country.region}}</span>
+          </div>
+          <div>
+            <span>Capital:</span>
+            <span>{{country.capital}}</span>
+          </div>
+        </div>
+        <div #column2>
+          <div class="summary-row">
+            <span>Top Level Domain:</span>
+            <span>{{country.name}}</span>
+          </div>
+          <div class="summary-row">
+            <span>Currencies:</span>
+            <span>{{country.population}}</span>
+          </div>
+          <div class="summary-row">
+            <span>Languages:</span>
+            <span>{{country.region}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

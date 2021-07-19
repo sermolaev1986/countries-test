@@ -1,0 +1,36 @@
+<div class="search-container">
+  <div class="btn-group btn-group-toggle">
+    <button class="background-light" (click)="filterCountriesByName()">
+      <fa-icon class="text-white" [icon]="searchIcon"></fa-icon>
+    </button>
+    <input #countryNameFilter type="text" class="form-control" placeholder="Search for a country...">
+  </div>
+
+  <div ngbDropdown class="background-light d-inline-block">
+    <button class="btn text-white" id="dropdownBasic1" ngbDropdownToggle>Filter by region</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button *ngFor="let region of regions"  (click)="filterCountriesByRegion(region)" ngbDropdownItem>{{region}}</button>
+    </div>
+  </div>
+</div>
+
+<div class="countries-gallery">
+  <a [routerLink]="['/country', country.name]" *ngFor="let country of countries" class="country-card background-light">
+    <img class="country-flag" [src]="country.flag">
+    <div class="country-description">
+      <div class="country-name">{{country.name}}</div>
+      <div>
+        <span class="description-bold">Population:</span>
+        <span>{{country.population}}</span>
+      </div>
+      <div>
+        <span class="description-bold">Region:</span>
+        <span>{{country.region}}</span>
+      </div>
+      <div>
+        <span class="description-bold">Capital:</span>
+        <span>{{country.capital}}</span>
+      </div>
+    </div>
+  </a>
+</div>

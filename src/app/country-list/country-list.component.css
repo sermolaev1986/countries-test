@@ -1,0 +1,43 @@
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+}
+
+.countries-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  padding: 15px;
+}
+
+.country-card {
+  margin: 15px;
+  max-width: 400px;
+}
+
+.country-description {
+  padding: 20px;
+  /*height: auto;*/
+}
+
+.description-bold {
+  font-weight: bold;
+}
+
+.country-name {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.country-flag {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,41 @@
+.country-detail-container {
+  padding: 50px;
+}
+
+.back-button {
+  padding: 10px 50px;
+}
+
+.back-text {
+  margin-left: 10px;
+}
+
+.country-detail {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.country-summary-container {
+  padding: 50px;
+  margin-left: 30px;
+}
+
+.country-name {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.country-summary {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.country-summary-column-1 {
+  margin-right: 150px;
+}
+
+.summary-row {
+  margin-bottom: 20px;
+}
